@@ -15,7 +15,7 @@ const CollectionItem = ({ item, addItem}) => (
             <span className="name">{item.name}</span>
             <span className="price">${item.price}</span>
         </div>
-        <CustomButton onClick={() => addItem(item)} inverted>Add to cart</CustomButton>
+        <CustomButton className="custom-button" onClick={() => addItem(item)} inverted>Add to cart</CustomButton>
     </div>
 );
 const mapDispatchToProps = dispatch => ({
